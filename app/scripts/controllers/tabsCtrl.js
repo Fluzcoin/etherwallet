@@ -6,7 +6,7 @@ var tabsCtrl = function($scope, globalService, $translate, $sce) {
     $scope.customNodeModal = document.getElementById('customNodeModal') ? new Modal(document.getElementById('customNodeModal')) : null;
     $scope.Validator = Validator;
     $scope.nodeList = nodes.nodeList;
-    $scope.defaultNodeKey = 'eth_mew';
+    $scope.defaultNodeKey = 'fluz';
     $scope.customNode = { options: 'eth', name: '', url: '', port: '', httpBasicAuth: null, eip155: false, chainId: '' };
     $scope.customNodeCount = 0;
     $scope.nodeIsConnected = true;
@@ -40,11 +40,11 @@ var tabsCtrl = function($scope, globalService, $translate, $sce) {
     }
     var setGasValues = function() {
         $scope.gas = {
-            curVal: 41,
-            value: globalFuncs.localStorage.getItem(gasPriceKey, null) ? parseInt(globalFuncs.localStorage.getItem(gasPriceKey)) : 41,
-            max: 99,
-            min: 1,
-            step: 1
+            curVal: 0,
+            value: 0,
+            max: 0,
+            min: 0,
+            step: 0
         }
 
         var curNode = globalFuncs.localStorage.getItem('curNode', null);

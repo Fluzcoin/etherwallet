@@ -157,6 +157,7 @@ var sendTxCtrl = function($scope, $sce, walletService, $rootScope) {
     }, true);
 
     $scope.estimateGasLimit = function() {
+        return; // Temp disable gas estimation
         $scope.customGasMsg = ''
         if ($scope.gasLimitChanged) return;
         for (var i in $scope.customGas) {
