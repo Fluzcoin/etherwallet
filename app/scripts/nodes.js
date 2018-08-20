@@ -32,7 +32,7 @@ nodes.nodeList = {
         'tokenList': [],
         'abiList': [],
         'service': 'Fluzcoin',
-        'lib': new nodes.customNode('https://node.fluzcoin.io', '22000')
+        'lib': new nodes.customNode('https://node.fluzcoin.io', '80')
     }
 };
 
