@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>MyEtherWallet.com</title>
+<title>Fluzcoin Wallet</title>
 <meta property="og:title" content="Fluzcoin wallet">
 <meta property="og:site_name" content="Fluzcoin wallet">
 <meta name="twitter:title" content="Fluzcoin wallet">
@@ -22,8 +22,6 @@
 <link href="images/fav/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
 <link href="images/fav/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
 <link href="images/fav/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
-<link href="images/fav/manifest.json" rel="manifest">
-<link href="images/fav/safari-pinned-tab.svg" rel="mask-icon" color="#2f99b0">
 <link href="images/fav/favicon.ico" rel="shortcut icon">
 <meta name="apple-mobile-web-app-title" content="Fluzcoin wallet">
 <meta name="application-name" content="Fluzcoin wallet">
