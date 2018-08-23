@@ -24,8 +24,8 @@ nodes.customNodeObj = {
 nodes.nodeList = {
     'fluz': {
         'name': 'FFC',
-        'blockExplorerTX': 'https://etherscan.io/tx/[[txHash]]',
-        'blockExplorerAddr': 'https://etherscan.io/address/[[address]]',
+        'blockExplorerTX': 'https://explorer.fluzcoin.io/transaction/[[txHash]]',
+        'blockExplorerAddr': 'https://explorer.fluzcoin.io/account/[[address]]',
         'type': nodes.nodeTypes.ETH,
         'eip155': true,
         'chainId': '',

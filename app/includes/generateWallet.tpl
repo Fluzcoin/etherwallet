@@ -112,25 +112,7 @@
       </h2>
       <ul>
         <li translate="GEN_Help_12">
-          Use it to unlock your wallet via MyEtherWallet (or Mist, Geth, Parity &amp; other wallet clients.)
-        </li>
-      </ul>
-
-      <h2 translate="GEN_Help_4">Guides &amp; FAQ</h2>
-      <ul>
-        <li>
-          <a href="https://myetherwallet.github.io/knowledge-base/getting-started/backing-up-your-new-wallet.html" target="_blank" rel="noopener noreferrer">
-            <strong translate="GEN_Help_13">
-              How to Back Up Your Keystore File
-            </strong>
-          </a>
-        </li>
-        <li>
-          <a href="https://myetherwallet.github.io/knowledge-base/private-keys-passwords/difference-beween-private-key-and-keystore-file.html" target="_blank" rel="noopener noreferrer">
-            <strong translate="GEN_Help_14">
-              What are these Different Formats?
-            </strong>
-          </a>
+          Use it to unlock your wallet via this website
         </li>
       </ul>
 
@@ -184,44 +166,6 @@
       </a>
 
     </section>
-
-    <section class="block__help">
-      <h2 translate="GEN_Help_4">
-        Guides &amp; FAQ
-      </h2>
-      <ul>
-        <li><a href="https://myetherwallet.github.io/knowledge-base/getting-started/backing-up-your-new-wallet.html" target="_blank" rel="noopener noreferrer">
-          <strong translate="HELP_2a_Title">
-            How to Save & Backup Your Wallet.
-          </strong>
-        </a></li>
-        <li><a href="https://myetherwallet.github.io/knowledge-base/getting-started/protecting-yourself-and-your-funds.html" target="_blank" rel="noopener noreferrer">
-          <strong translate="GEN_Help_15">Preventing loss &amp; theft of your funds.</strong>
-        </a></li>
-        <li><a href="https://myetherwallet.github.io/knowledge-base/private-keys-passwords/difference-beween-private-key-and-keystore-file.html" target="_blank" rel="noopener noreferrer">
-          <strong translate="GEN_Help_16">What are these Different Formats?</strong>
-        </a></li>
-      </ul>
-
-      <h2 translate="GEN_Help_17">
-        Why Should I?
-      </h2>
-      <ul>
-        <li translate="GEN_Help_18">
-          To have a secondary backup.
-        </li>
-        <li translate="GEN_Help_19">
-          In case you ever forget your password.
-        </li>
-        <li>
-          <a href="https://myetherwallet.github.io/knowledge-base/offline/ethereum-cold-storage-with-myetherwallet.html" target="_blank" rel="noopener noreferrer" translate="GEN_Help_20">Cold Storage</a>
-        </li>
-      </ul>
-
-      <h2 translate="x_PrintDesc"></h2>
-
-    </section>
-
   </article>
 
   <article class="text-left" ng-show="showGetAddress">

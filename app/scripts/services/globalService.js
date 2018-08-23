@@ -22,15 +22,8 @@ var globalService = function($http, $httpParamSerializerJQLike) {
     mew: true,
     cx: true
   },
-  ens: {
-    id:2,
-    name: "NAV_ENS",
-    url: "ens",
-    mew: true,
-    cx: true
-  },
   viewWalletInfo: {
-    id: 3,
+    id: 2,
     name: "NAV_ViewWallet",
     url: "view-wallet-info",
     mew: true,
@@ -40,7 +33,7 @@ var globalService = function($http, $httpParamSerializerJQLike) {
 
   var currentTab = 0
   if(typeof chrome != 'undefined')
-    currentTab = chrome.windows === undefined ? 0 : 3
+    currentTab = chrome.windows === undefined ? 0 : 2
   return {
     tabs: tabs,
     currentTab: currentTab

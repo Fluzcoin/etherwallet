@@ -4,72 +4,32 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>MyEtherWallet.com</title>
-<meta property="og:title" content="MyEtherWallet.com: Your Key to Ethereum">
-<meta property="og:site_name" content="MyEtherWallet.com: Your Key to Ethereum">
-<meta name="twitter:title" content="MyEtherWallet.com: Your Key to Ethereum">
-<meta name="apple-mobile-web-app-title" content="MyEtherWallet.com: Your Key to Ethereum">
-<link href="https://www.myetherwallet.com" rel="canonical">
-<meta content="https://www.myetherwallet.com" property="og:url">
-<meta content="https://www.myetherwallet.com" name="twitter:url">
+<meta property="og:title" content="Fluzcoin wallet">
+<meta property="og:site_name" content="Fluzcoin wallet">
+<meta name="twitter:title" content="Fluzcoin wallet">
+<meta name="apple-mobile-web-app-title" content="Fluzcoin wallet">
+<link href="https://wallet.fluzcoin.io" rel="canonical">
+<meta content="https://wallet.fluzcoin.io" property="og:url">
+<meta content="https://wallet.fluzcoin.io" name="twitter:url">
 <link rel="stylesheet" href="css/etherwallet-master.min.css">
 <script type="text/javascript" src="js/etherwallet-static.min.js"></script>
 <script type="text/javascript" src="js/etherwallet-master.js"></script>
-<meta name="description" content="MyEtherWallet (MEW) is a free, open-source, client-side interface for generating Ethereum wallets & more. Interact with the Ethereum blockchain easily & securely.">
-<meta property="og:description"  content="Free, open-source, client-side Ethereum wallet. Enabling you to interact with the blockchain easily & securely.">
-<meta name="twitter:description" content="Free, open-source, client-side Ethereum wallet. Enabling you to interact with the blockchain easily & securely.">
+<meta name="description" content="Fluzcoin wallet to try out the Quorum implementation">
+<meta property="og:description"  content="Fluzcoin wallet to try out the Quorum implementation">
+<meta name="twitter:description" content="Fluzcoin wallet to try out the Quorum implementation">
 <meta name="robots" content="index,follow">
 <meta name="googlebot" content="index,follow">
-<meta name="google-site-verification" content="IpChQ00NYUQuNs_7Xs6xlnSdzalOlTUYbBsr8f7OpvM" />
 <link href="images/fav/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
 <link href="images/fav/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
 <link href="images/fav/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
 <link href="images/fav/manifest.json" rel="manifest">
 <link href="images/fav/safari-pinned-tab.svg" rel="mask-icon" color="#2f99b0">
 <link href="images/fav/favicon.ico" rel="shortcut icon">
-<meta name="apple-mobile-web-app-title" content="MyEtherWallet &middot; Your Key to Ethereum">
-<meta name="application-name" content="MyEtherWallet">
-<meta name="msapplication-config" content="images/fav/browserconfig.xml">
-<meta name="theme-color" content="#1d6986">
-<meta name="apple-mobile-web-app-status-bar-style" content="#1d6986">
-<meta property="og:url" content="https://www.myetherwallet.com" />
-<meta property="og:title" content="MyEtherWallet.com  &middot; Your Key to Ethereum" />
+<meta name="apple-mobile-web-app-title" content="Fluzcoin wallet">
+<meta name="application-name" content="Fluzcoin wallet">
+<meta property="og:url" content="https://wallet.fluzcoin.io" />
+<meta property="og:title" content="Fluzcoin wallet" />
 <meta property="og:type" content="website">
-<meta property="og:image" content="/images/myetherwallet-logo-banner.png" />
-<meta property="og:image" content="/images/myetherwallet-logo.png" />
-<meta property="og:image" content="/images/myetherwallet-logo-square.png" />
-<meta property="og:image" content="/images/myetherwallet-banner-fun.jpg" />
-<meta name="twitter:image" content="/images/myetherwallet-logo-twitter.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@MyEtherWallet">
-<meta name="twitter:creator" content="@MyEtherWallet">
-<script type="application/ld+json">
-{
-"@context": "http://schema.org",
-"@type" : "Organization",
-"name" : "MyEtherWallet",
-"legalName" : "MyEtherWallet Inc",
-"url" : "https://www.myetherwallet.com/",
-"contactPoint" : [{
-  "@type" : "ContactPoint",
-  "email" : "support@myetherwallet.com",
-  "url"   : "https://myetherwallet.com",
-  "contactType" : "customer service"
-}],
-"logo" : "https://www.myetherwallet.com/images/myetherwallet-logo.png",
-"description": "MyEtherWallet.com is a free, open-source, client-side interface for generating Ethereum wallets &amp; more. Interact with the Ethereum blockchain easily &amp; securely.",
-"sameAs" : [
-  "https://www.myetherwallet.com/",
-  "https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm",
-  "https://www.facebook.com/MyEtherWallet/",
-  "https://twitter.com/myetherwallet",
-  "https://medium.com/@myetherwallet",
-  "https://myetherwallet.github.io/knowledge-base/",
-  "https://github.com/kvhnuke/etherwallet",
-  "https://github.com/MyEtherWallet",
-  "https://kvhnuke.github.io/etherwallet/","https://myetherwallet.slack.com/"
-]
-}
-</script>
 </head>
 <body>
 
@@ -79,47 +39,10 @@
   <section class="container">
     @@if (site === 'mew' ) {
       <a class="brand" href="/" aria-label="Go to homepage">
-        <img src="images/logo-myetherwallet.svg"   height="64px" width="245px" alt="MyEtherWallet" />
-      </a>
-    }
-    @@if (site === 'cx'  ) {
-      <a class="brand" href="/cx-wallet.html" aria-label="Go to homepage">
-        <img src="images/logo-myetherwalletcx.svg" height="64px" width="245px" alt="MyEtherWallet" />
+        <img src="images/logo-fluzcoin.png"   height="64px" width="245px" alt="Fluzcoin" />
       </a>
     }
     <div class="tagline">
-
-    <span class="dropdown dropdown-lang" ng-cloak>
-      <a tabindex="0"  aria-haspopup="true" aria-expanded="false" aria-label="change language. current language {{curLang}}" class="dropdown-toggle" ng-click="dropdown = !dropdown">{{curLang}}<i class="caret"></i></a>
-      <ul class="dropdown-menu" ng-show="dropdown">
-        <li><a ng-class="{true:'active'}[curLang=='Català']"          ng-click="changeLanguage('ca','Català'         )"> Català          </a></li>
-        <li><a ng-class="{true:'active'}[curLang=='Deutsch']"         ng-click="changeLanguage('de','Deutsch'        )"> Deutsch         </a></li>
-        <li><a ng-class="{true:'active'}[curLang=='Ελληνικά']"        ng-click="changeLanguage('el','Ελληνικά'       )"> Ελληνικά        </a></li>
-        <li><a ng-class="{true:'active'}[curLang=='English']"         ng-click="changeLanguage('en','English'        )"> English         </a></li>
-        <li><a ng-class="{true:'active'}[curLang=='Español']"         ng-click="changeLanguage('es','Español'        )"> Español         </a></li>
-        <li><a ng-class="{true:'active'}[curLang=='Farsi']"           ng-click="changeLanguage('fa','Farsi'          )"> Farsi           </a></li>
-        <li><a ng-class="{true:'active'}[curLang=='Suomi']"           ng-click="changeLanguage('fi','Suomi'          )"> Suomi           </a></li>
-        <li><a ng-class="{true:'active'}[curLang=='Français']"        ng-click="changeLanguage('fr','Français'       )"> Français        </a></li>
-        <li><a ng-class="{true:'active'}[curLang=='Magyar']"          ng-click="changeLanguage('hu','Magyar'         )"> Magyar          </a></li>
-        <li><a ng-class="{true:'active'}[curLang=='Haitian Creole']"  ng-click="changeLanguage('ht','Haitian Creole' )"> Haitian Creole  </a></li>
-        <li><a ng-class="{true:'active'}[curLang=='Indonesian']"      ng-click="changeLanguage('id','Indonesian'     )"> Bahasa Indonesia</a></li>
-        <li><a ng-class="{true:'active'}[curLang=='Italiano']"        ng-click="changeLanguage('it','Italiano'       )"> Italiano        </a></li>
-        <li><a ng-class="{true:'active'}[curLang=='日本語']"           ng-click="changeLanguage('ja','日本語'          )"> 日本語          </a></li>
-        <li><a ng-class="{true:'active'}[curLang=='한국어']"            ng-click="changeLanguage('ko','한국어'          )"> 한국어           </a></li>
-        <li><a ng-class="{true:'active'}[curLang=='Nederlands']"      ng-click="changeLanguage('nl','Nederlands'     )"> Nederlands      </a></li>
-        <li><a ng-class="{true:'active'}[curLang=='Norsk Bokmål']"    ng-click="changeLanguage('no','Norsk Bokmål'   )"> Norsk Bokmål    </a></li>
-        <li><a ng-class="{true:'active'}[curLang=='Polski']"          ng-click="changeLanguage('pl','Polski'         )"> Polski          </a></li>
-        <li><a ng-class="{true:'active'}[curLang=='Português']"       ng-click="changeLanguage('pt','Português'      )"> Português       </a></li>
-        <li><a ng-class="{true:'active'}[curLang=='Русский']"         ng-click="changeLanguage('ru','Русский'        )"> Русский         </a></li>
-        <li><a ng-class="{true:'active'}[curLang=='ภาษาไทย']"         ng-click="changeLanguage('th','ภาษาไทย'        )"> ภาษาไทย         </a></li>
-        <li><a ng-class="{true:'active'}[curLang=='Türkçe']"          ng-click="changeLanguage('tr','Türkçe'         )"> Türkçe          </a></li>
-        <li><a ng-class="{true:'active'}[curLang=='Tiếng Việt']"      ng-click="changeLanguage('vi','Tiếng Việt'     )"> Tiếng Việt      </a></li>
-        <li><a ng-class="{true:'active'}[curLang=='简体中文']"         ng-click="changeLanguage('zhcn','简体中文'      )"> 简体中文         </a></li>
-        <li><a ng-class="{true:'active'}[curLang=='繁體中文']"         ng-click="changeLanguage('zhtw','繁體中文'      )"> 繁體中文         </a></li>
-        <li role="separator" class="divider"></li>
-        <li><a data-toggle="modal" data-target="#disclaimerModal" translate="FOOTER_4"> Disclaimer </a></li>
-      </ul>
-    </span>
     </div>
   </section>
 </section>

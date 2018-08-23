@@ -32,16 +32,12 @@
         <span class="mono wrap">{{wallet.balance}}</span> {{ajaxReq.type}}
       </li>
     </ul>
+    <a href="">Need Fluzcoin? Click here!</a>
     <h5 translate="sidebar_TransHistory"> Transaction History</h5>
     <ul class="account-info">
       <li ng-show="ajaxReq.type != 'CUS'">
         <a href="{{ajaxReq.blockExplorerAddr.replace('[[address]]', wallet.getAddressString())}}" target="_blank" rel="noopener noreferrer">
-          {{ajaxReq.type}} ({{ajaxReq.blockExplorerTX.replace('/tx/[[txHash]]', '')}})
-        </a>
-      </li>
-      <li ng-show="ajaxReq.type == 'ETH'">
-        <a href="https://ethplorer.io/address/{{wallet.getAddressString()}}" target="_blank" rel="noopener noreferrer">
-          Tokens (Ethplorer.io)
+          {{ajaxReq.type}} ({{ajaxReq.blockExplorerTX.replace('/transaction/[[txHash]]', '')}})
         </a>
       </li>
     </ul>
@@ -51,104 +47,6 @@
     <a ng-click="slide=1"> &bull; </a>
     <a ng-click="slide=2"> &bull; </a>
   </div>
-
-
-
-
-  <!-- Token Balances -->
-  <div class="block token-balances">
-    <h5 translate="sidebar_TokenBal">Token Balances</h5>
-
-    <!-- Load Token Balances
-    <a class="btn btn-warning btn-xs"
-       ng-click="wallet.setTokens(); globalService.tokensLoaded=true"
-       ng-hide="globalService.tokensLoaded">
-      <img src="images/icon-load-tokens.svg" style="height: 1em; width: auto; margin-right: 5px;" />
-      Load Tokens
-    </a>
-     -->
-
-    <!-- you can your Balance on Blockchain Explorer -->
-
-    <p>
-      You can also view your Balances on
-      <a ng-show="ajaxReq.type != 'CUS'"
-         href="{{ajaxReq.blockExplorerAddr.replace('[[address]]', wallet.getAddressString())}}"
-         target="_blank"
-         rel="noopener noreferrer">
-          {{ajaxReq.blockExplorerTX.replace('/tx/[[txHash]]', '')}}
-      </a>
-      <span ng-show="ajaxReq.type == 'ETH'"> or
-        <a href="https://ethplorer.io/address/{{wallet.getAddressString()}}"
-           target="_blank"
-           rel="noopener noreferrer">
-             ethplorer.io
-        </a>
-      </span>
-    </p>
-
-    <!-- Buttons -->
-    <a class="btn btn-warning btn-xs" ng-click="showAllTokens=true" ng-show="showAllTokens==false">
-      Show All Tokens
-    </a>
-    <a class="btn btn-warning btn-xs" ng-click="showAllTokens=false" ng-show="showAllTokens==true">
-      Only Show Balances
-    </a>
-    <a class="btn btn-default btn-xs" ng-click="customTokenField=!customTokenField">
-      <span translate="SEND_custom">Add Custom Token</span>
-    </a>
-
-    <br ng-show="customTokenField" />
-
-    <!-- Add Custom Token -->
-    <div class="custom-token-fields" ng-show="customTokenField">
-      <div class="row">
-        <address-field
-          placeholder="{{ ajaxReq.type=='ETH' ? 'mewtopia.eth' : '0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D' }}"
-          var-name="localToken.contractAdd"
-          labelTranslated="TOKEN_Addr">
-        </address-field>
-      </div>
-
-      <label translate="TOKEN_Symbol"> Token Symbol: </label>
-      <input class="form-control input-sm"
-             type="text"
-             ng-model="localToken.symbol"
-             ng-class="localToken.symbol!='' ? 'is-valid' : 'is-invalid'" />
-
-      <label translate="TOKEN_Dec"> Decimals: </label>
-      <input class="form-control input-sm"
-             type="text"
-             ng-model="localToken.decimals"
-             ng-class="Validator.isPositiveNumber(localToken.decimals) ? 'is-valid' : 'is-invalid'" />
-
-      <button class="btn btn-primary btn-xs" ng-click="saveTokenToLocal()" translate="x_Save">Save</button>
-    </div>
-
-    <br />
-    <br />
-
-    <!-- Balances -->
-    <table class="account-info">
-      <tr ng-class="token.type!=='default' ? 'custom-token' : ''"
-          ng-repeat="token in wallet.tokenObjs track by $index"
-          ng-hide="(token.balance==0 || token.balance=='Click to Load') && showAllTokens==false">
-        <td class="mono wrap point">
-          <img src="images/icon-remove.svg"
-               class="token-remove"
-               title="Remove Token"
-               ng-click="removeTokenFromLocal(token.symbol)"
-               ng-show="token.type!=='default'" />
-          <span ng-click="setAndVerifyBalance(token)">
-            {{ token.getBalance() }}
-          </span>
-        </td>
-        <td>
-          {{ token.getSymbol() }}
-        </td>
-      </tr>
-    </table>
-
   </div>
 
 

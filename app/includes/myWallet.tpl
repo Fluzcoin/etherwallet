@@ -233,9 +233,6 @@
         </div>
 
         <div class="modal-body">
-          <p translate="VIEWWALLET_Subtitle_Short">
-            This allows you to download different versions of private keys and re-print your paper wallet.
-          </p>
           <form role="form">
             <div class="form-group">
               <label for="walletName" translate="ADD_Label_3">
