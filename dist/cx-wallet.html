@@ -19,10 +19,10 @@
 <meta name="twitter:description" content="Fluzcoin wallet to try out the Quorum implementation">
 <meta name="robots" content="index,follow">
 <meta name="googlebot" content="index,follow">
-<link href="images/fav/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
-<link href="images/fav/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
-<link href="images/fav/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
-<link href="images/fav/favicon.ico" rel="shortcut icon">
+<link href="images/fav/apple-touch-icon.png?v=1" rel="apple-touch-icon" sizes="180x180">
+<link href="images/fav/favicon-32x32.png?v=1" rel="icon" type="image/png" sizes="32x32">
+<link href="images/fav/favicon-16x16.png?v=1" rel="icon" type="image/png" sizes="16x16">
+<link href="images/fav/favicon.ico?v=1" rel="shortcut icon">
 <meta name="apple-mobile-web-app-title" content="Fluzcoin wallet">
 <meta name="application-name" content="Fluzcoin wallet">
 <meta property="og:url" content="https://wallet.fluzcoin.io" />
