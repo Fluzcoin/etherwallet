@@ -32,7 +32,8 @@
         <span class="mono wrap">{{wallet.balance}}</span> {{ajaxReq.type}}
       </li>
     </ul>
-    <a href="">Need Fluzcoin? Click here!</a>
+    <a ng-click="fluzcoinFaucet()" href="#" ng-hide="fluzFaucetLinkHide" ng-if="wallet.balance == 0">Need Fluzcoin? Click here!</a>
+    <span ng-bind="fluzFaucetText" style="color:green"></span>
     <h5 translate="sidebar_TransHistory"> Transaction History</h5>
     <ul class="account-info">
       <li ng-show="ajaxReq.type != 'CUS'">

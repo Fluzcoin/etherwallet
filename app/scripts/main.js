@@ -161,7 +161,7 @@ app.controller('contractsCtrl', ['$scope', '$sce', 'walletService', contractsCtr
 app.controller('ensCtrl', ['$scope', '$sce', 'walletService', ensCtrl]);
 app.controller('domainsaleCtrl', ['$scope', '$sce', 'walletService', domainsaleCtrl]);
 app.controller('offlineTxCtrl', ['$scope', '$sce', 'walletService', offlineTxCtrl]);
-app.controller('walletBalanceCtrl', ['$scope', '$sce', '$rootScope', walletBalanceCtrl]);
+app.controller('walletBalanceCtrl', ['$scope', '$sce', '$rootScope', 'walletService', walletBalanceCtrl]);
 app.controller('helpersCtrl', ['$scope', helpersCtrl]);
 if (IS_CX) {
   app.controller('addWalletCtrl', ['$scope', '$sce', addWalletCtrl]);

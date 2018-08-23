@@ -150,13 +150,6 @@
     <!-- Gas Limit -->
     <section class="row form-group">
       <div class="col-sm-11 clearfix">
-        <a class="account-help-icon"
-           href="https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html"
-           target="_blank"
-           rel="noopener noreferrer">
-          <img src="images/icon-help.svg" class="help-icon" />
-          <p class="account-help-text" translate="GAS_LIMIT_Desc"></p>
-        </a>
         <label translate="TRANS_gas">
           Gas Limit:
         </label>
@@ -185,12 +178,6 @@
       <!-- Data -->
       <section class="row form-group">
         <div class="col-sm-11 clearfix" ng-show="tx.sendMode=='ether'">
-          <span class="account-help-icon">
-            <img src="images/icon-help.svg" class="help-icon" />
-            <p class="account-help-text" translate="OFFLINE_Step2_Label_6b">
-              This is optional.
-            </p>
-          </span>
 
           <label translate="TRANS_data"> Data: </label>
 
@@ -209,14 +196,6 @@
       <section class="row form-group" ng-show="checkTxPage">
         <div class="col-sm-11 clearfix">
 
-          <a class="account-help-icon"
-             href="https://myetherwallet.github.io/knowledge-base/transactions/what-is-nonce.html"
-             target="_blank"
-             rel="noopener noreferrer">
-            <img src="images/icon-help.svg" class="help-icon" />
-            <p class="account-help-text" translate="NONCE_Desc"></p>
-          </a>
-
           <label translate="OFFLINE_Step2_Label_5">
             Nonce
           </label>
@@ -234,13 +213,6 @@
       <!-- Gas Price -->
       <section class="row form-group" ng-show="checkTxPage">
         <div class="col-sm-11 clearfix">
-          <a class="account-help-icon"
-             href="https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html"
-             target="_blank"
-             rel="noopener noreferrer">
-                <img src="images/icon-help.svg" class="help-icon" />
-                <p class="account-help-text" translate="GAS_PRICE_Desc"></p>
-          </a>
 
           <label translate="OFFLINE_Step2_Label_3">
             Gas Price:

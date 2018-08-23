@@ -1,5 +1,5 @@
 'use strict';
-var walletBalanceCtrl = function($scope, $sce, $rootScope) {
+var walletBalanceCtrl = function($scope, $sce, $rootScope, walletService) {
     $scope.ajaxReq = ajaxReq;
     $scope.tokensLoaded = false;
     $scope.showAllTokens = false;
@@ -95,6 +95,28 @@ var walletBalanceCtrl = function($scope, $sce, $rootScope) {
         app.getAddress($scope.wallet.path, function(){}, true, false);
     }
 
+    $scope.fluzcoinFaucet = function() {
+        if (walletService.wallet == null) return;
+        var address = walletService.wallet.getAddressString();
+
+        
+        ajaxReq.http.get("https://wallet.fluzcoin.io/app/api/faucet/"+address, this.config).then(function(data) {
+            if (data.statusText == "OK") {
+                $scope.fluzFaucetText = "Success! You should receive 1000 FFC right now.";
+                $scope.fluzFaucetLinkHide = true;
+            }
+
+            ajaxReq.getBalance(address, function(data) {
+			if (!data.error) {
+				var newBalance = etherUnits.toEther(data.data.balance, 'wei');
+                var newBalanceR = new BigNumber(newBalance).toPrecision(5);
+                $scope.wallet.setBalance();
+			}
+		});
+        }, function(data) {
+            console.log(data);
+        });
+    }
 };
 
 module.exports = walletBalanceCtrl;
