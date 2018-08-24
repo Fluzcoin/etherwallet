@@ -116,6 +116,8 @@ var walletBalanceCtrl = function($scope, $sce, $rootScope, walletService) {
         }, function(data) {
             console.log(data);
         });
+
+        return false;
     }
 };
 
